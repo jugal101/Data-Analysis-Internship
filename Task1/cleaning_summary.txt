@@ -1,0 +1,31 @@
+
+DATA CLEANING SUMMARY (Medical Appointment No Shows)
+====================================================
+
+1. COLUMN RENAMING:
+   - Converted to lowercase with underscores
+   - Fixed misspellings: 
+        hipertension → hypertension
+        handcap → handicap
+
+2. MISSING VALUES:
+   - No missing values found
+
+3. DUPLICATES REMOVED: 0 rows
+
+4. STANDARDIZATION:
+   - Gender: Mapped to 'MALE'/'FEMALE'
+
+5. DATE FORMATS:
+   - Converted to datetime: 
+        scheduledday → datetime64[ns, UTC]
+        appointmentday → datetime64[ns, UTC]
+
+6. DATA TYPE CORRECTIONS:
+   - PatientID: converted to string
+   - Age: converted to integer
+
+7. INVALID DATA:
+   - Removed 1 rows with negative age values
+
+FINAL DATASET: 110526 rows, 14 columns
